@@ -1,5 +1,5 @@
 # TesteFrontEnd_Techmid
-Teste para vaga de front-end na Techmid
+Teste para vaga de front-end na Techmid<br />
 <strong>Seu código será avaliado a partir das instruções abaixo:</strong>
 
 <h4>Como começar?</h4>
