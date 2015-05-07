@@ -1,0 +1,77 @@
+/*Design Responsivo*/
+/*@media queries header*/
+   @media screen and (max-width: 938px){
+    .logo{
+      width: 45%;
+      float: none;
+    }
+    .barra-nav{
+      float: none;
+      width: 100%;
+    }
+    .formulario-pesquisa{
+      width: 50%;
+    }
+   }
+   @media screen and (max-width: 530px){
+    .logo{
+      width: 100%;
+    }
+    .formulario-pesquisa{
+      width: 100%;
+    }
+   }
+   /*@media queries conteudo 2 */
+   @media screen and (max-width: 1071px){
+    .sessao-miniatura{
+      width: 32%;
+    }
+    .conteudo-mini::after
+    {
+        display: block;
+        clear: both;
+        content: '';
+    }
+   }
+   @media screen and (max-width: 573px){
+    .sessao-miniatura{
+      width: 100%;
+    }
+   }
+    /*@media queries conteudo hot */
+    @media screen and (max-width: 1302px){
+      .views-hot, .data-hot{
+        width: 90%;
+      }
+    }
+    @media screen and (max-width: 853px){
+      .sessao-hot{
+        width: 49%;
+      }
+    }
+    @media screen and (max-width: 573px){
+      .sessao-hot{
+        width: 100%;
+      }
+    }
+    /*@media queries conteudo footer */
+    @media screen and (max-width: 820px){
+      .noticia, .form-contato{
+        width: 100%;
+      }
+      .input-nome, .input-email, .input-msg{
+        margin-left: 15%;
+        float: none;
+      }
+      .input-envia{
+        width: 70%;
+        margin-left: 15%;
+        float: none;
+        margin-bottom: 5%;
+      }
+      .titulo-form{
+        margin-left: 15%;
+        float: none;
+        text-align: center;
+      }
+    }

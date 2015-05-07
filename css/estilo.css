@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+/*Importa Fontes*/
+@font-face{
+    font-family: 'NotoSans-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'NotoSans-Italic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Noto_Sans/NotoSans-Italic.ttf');
+}
+@font-face{
+    font-family: 'NotoSans-Bold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Noto_Sans/NotoSans-Bold.ttf');
+}
+@font-face{
+    font-family: 'NotoSans-BoldItalic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Noto_Sans/NotoSans-BoldItalic.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/****Header****/
+body {
+   font: normal  16px NotoSans-Regular, sans-serif;
+   background-image:url('../img/bg.jpg');
+   margin: 0 3%;
+   padding: 2% 0;
+}
+
+.logo {
+	height: auto;
+	width: 15%;
+	margin-top: 3%;
+	float: left;
+	padding-right: 3%;
+}
+.nav{
+  position: relative;
+  width: 100%;
+}
+.barra-nav{
+width: 50%;
+float: right;
+}
+
+header, nav {
+	display: block;
+}
+/****Fim do Header****/
+/****Nav****/
+
+nav ul {
+	list-style: none;
+
+}
+
+nav ul li {
+	float: left;
+	margin-top: 5%;
+	background: #363636;
+	width: 22%;
+	margin-right: 1%;
+  padding: 10px 0;
+	border-radius: .4em;
+	text-align: center;
+}
+nav ul li a {
+	color: #FFF;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	
+
+}
+
+nav ul li a:hover {
+	text-decoration: underline;	
+}
+
+nav ul li.selected{
+	font-weight: bold;	
+	background: #828282;
+	border-radius: .4em;
+	text-align: center;
+}
+.formulario-pesquisa{
+  display: inline-block;
+  float: right;
+  margin-top: 3%;
+  margin-right: 1%;
+  width: 30%
+}
+.inputsearch { 
+    background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 5px; 
+    box-shadow: 0 0 5px #DDD inset; 
+    color: #666; 
+    width: 60%;
+    height:30px; 
+    font-size: 15px;
+   } 
+.submitsearch{
+	background: #363636;
+	color: #fff;
+  width: 35%;
+	padding: 8px 0;
+	border-radius: .4em;
+   }
+
+/****Fim do Nav****/
+/****Responsive Slides****/
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  /****Fim do Responsive Slides****/
+  /****Título com Linhas****/
+  h1 span {
+  	display: table-cell;
+  }
+ .linha {
+  	border-bottom: 1px solid #363636;
+  	width: 50%;
+  }
+ .titulo-principal{
+  	top: 0.5em; 
+	  padding: 0 1.5em; 
+  	position: relative;
+  	text-align: center;
+  }
+  /****Fim do Título com Linhas****/
+  /****Sessao****/
+ .conteudo{
+  	width: 100%;
+  	padding: 0;
+  }
+ .conteudo-sessao{
+  	display: inline-block;
+    width: 41%;
+    margin-top: 3%;
+  }
+ .conteudo-2{
+  	margin-left: 16%;
+  }
+ .titulo-sessao{
+
+  }
+ .texto-sessao{
+  	margin-top: 3%;
+  }
+  /****Fim Sessao****/
+  /****Sessao Miniatura****/
+ .sessao-miniatura{
+ 	margin-top: 3%;
+  	width: 15.6%;
+    padding: .5% ;
+    float: left;
+  }
+
+ .titulo-miniatura{
+ 	margin: 0;
+    text-align: center;
+    color: #fff;
+    border-radius: .3em .3em 0 0;
+    background: #363636;
+  }
+ .conteudo-miniatura{
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+ .imagem-miniatura{
+  	width: 100%;
+    max-width: 100%;
+  }
+  }
+ .descricao-miniatura{
+    overflow-y: hidden;
+    height: 70%;
+  }
+ .link-miniatura{
+	text-align: center;
+	display: inline-block;
+    width: 98%;
+    padding: 3%;
+    color: #fff;
+    border-radius: .3em;
+    background: #363636;
+  }
+  /****Fim Sessao Miniatura****/
+  /****Sessao Hot****/
+  .sessao-hot{
+	margin-top: 3%;
+  	width: 24%;
+    padding: .5% ;
+    float: left;
+  }
+  .conteudo-hot{
+  	width: 100%;
+    margin: 0;
+    padding: 2%;;
+  }
+  .conteudo-hot h2{ /*Titulo do Hot*/
+  	border-radius: .5em .5em 0 0;
+    background: #363636;
+  	margin: 0;
+    padding: .6em .9em;
+    color: #fff;
+    font-size: 18px;
+  }
+  .imagem-hot{
+  	width: 100%;
+  }
+  .views-hot{
+  	float: left;
+	margin: 10px 0;
+    padding: .5em;
+    color: #fff;
+    border-radius: .4em;
+    background: #63b9b8;
+    width: 35%;
+    margin-right: 2%;
+  }
+  .data-hot{
+  	float: left;
+	margin: 10px 0;
+    padding: .5em;
+    color: #fff;
+    border-radius: .4em;
+    background: #63b9b8;
+    width: 52%;
+  }
+  .descricao-hot{
+	padding: 10px;
+  }
+   /****Fim da Sessao Hot****/
+   /****Inicio Rodape****/
+   footer{
+   	clear: both;
+    width: 100%;
+    padding-top: 1%;
+    background: #282828;
+   }
+   .noticia{
+    display: inline-block;
+    width: 70%;
+   }
+   .cabecalho-noticia{
+    margin-top: 2%;
+   	font: normal  1em NotoSans-Regular, sans-serif;
+    color: #fff;
+    margin-bottom: 2%;
+    margin-left: 3%;
+   }
+   .titulo-noticia{
+    font: normal  .9em NotoSans-Regular, sans-serif;
+    margin-left: 3%;
+    margin-top: 3%;
+   }
+   .titulo-noticia a{
+    color: #63b9b8;
+   }
+   .texto-noticia{
+    margin-left: 3%;
+    color: #fff;
+   }
+   /*Formulario de contato*/
+   .form-contato{
+    display: inline-block;
+    float: right;
+    width: 29%;
+   }
+   .titulo-form{
+    margin-top: 3%;
+    font: normal 1em;
+    text-align: right;
+    padding-right: 15%;
+    color: #FFF;
+    margin-bottom: 3%;
+   }
+   .input-nome, .input-email, .input-msg, .input-envia{
+    float: right;
+    right: 0;
+    border: none;
+    border-radius: 2px;
+    width: 70%;
+    margin-top: 1%;
+    font-size: 18px;
+   }
+   .input-envia{
+    width: 40%;
+    color: #fff;
+    background: #c0c0c0; 
+    box-shadow: .2em .2em .2em #000;
+    font-size: 20px;
+   }
+   /*Fim do formulário*/
+   /*Copyright*/
+   .copyright{
+    font-size: 14px;
+    padding: 4em 0;
+    color: #555;
+   }
+   .copyright img{
+    height: 1.5em;
+    vertical-align: middle;
+   }
+   /*Fim Copyright*/
